@@ -1,20 +1,53 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<div>
+  <div class="header">
+    <mat-toolbar>
+      <mat-toolbar-row>
+
+        <!--<button type="button" mat-icon-button (click)="drawer.toggle()">-->
+          <!--<mat-icon>menu</mat-icon>-->
+        <!--</button>-->
+
+        <span class="headerText"> Kateryna Levytska </span>
+
+
+      </mat-toolbar-row>
+    </mat-toolbar>
+  </div>
+
+  <mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side" opened="true">
+      <div class="avatarWrapper">
+        <img src="../assets/my_image.png" class="avatar">
+      </div>
+      <!--<div class="avatarHaader">Lead software engineer</div>-->
+
+      <div class="side-nav-chapter" routerLink="/contacts">Contacts</div>
+      <div class="side-nav-chapter" routerLink="/experience">Experience</div>
+      <div class="side-nav-chapter" routerLink="/education">Education</div>
+      <div class="side-nav-chapter" routerLink="/hobbies">Hobbies</div>
+      <div class="side-nav-chapter" routerLink="/blog">Blog</div>
+    </mat-drawer>
+
+    <div class="example-sidenav-content">
+      <router-outlet></router-outlet>
+    </div>
+
+  </mat-drawer-container>
+
+  <div class="footer">
+    <mat-toolbar>
+      <mat-toolbar-row>
+        <div class="footer-icon-block">
+          <img src="../assets/social/linkedin.png" class="fImg">
+          <img src="../assets/social/facebook.png" class="fImg">
+          <img src="../assets/social/instagram.png" class="fImg">
+          <img src="../assets/social/telegram.png" class="fImg">
+          <img src="../assets/social/twitter.png" class="fImg">
+          <img src="../assets/social/youtube.png" class="fImg">
+          <img src="../assets/social/github.png" class="fImg">
+        </div>
+      </mat-toolbar-row>
+    </mat-toolbar>
+  </div>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
 

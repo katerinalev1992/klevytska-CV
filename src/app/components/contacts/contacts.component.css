@@ -1,0 +1,22 @@
+.contactIcon{
+  width: 40px;
+  height:40px;
+}
+
+.contact-row{
+  display: flex;
+}
+
+.contact-row-text {
+  font-family: fantasy;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  padding-left: 1em;
+}
+
+.contact-header {
+  text-align: center;
+  font-size: 2em;
+  font-family: fantasy;
+  padding: 20px;
+}
