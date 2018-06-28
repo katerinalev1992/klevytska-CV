@@ -11,6 +11,7 @@ import {HobbiesComponent} from './components/hobbies/hobbies.component';
 import {EducationComponent} from './components/education/education.component';
 import {ExperienceComponent} from './components/experience/experience.component';
 import {BlogComponent} from './components/blog/blog.component';
+import {RootComponent} from './components/root/root.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import {BlogComponent} from './components/blog/blog.component';
     ExperienceComponent,
     EducationComponent,
     HobbiesComponent,
-    BlogComponent
+    BlogComponent,
+    RootComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +33,8 @@ import {BlogComponent} from './components/blog/blog.component';
       {path: 'experience', component: ExperienceComponent},
       {path: 'education', component: EducationComponent},
       {path: 'hobbies', component: HobbiesComponent},
-      {path: 'blog', component: BlogComponent}
+      {path: 'blog', component: BlogComponent},
+      {path: 'home', component: RootComponent}
     ])
   ],
   exports: [

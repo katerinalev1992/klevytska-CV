@@ -71,4 +71,15 @@
   padding: 5px;
 }
 
+.contactDiv {
+  font-family: monospace;
+
+  padding-left: 20px;
+}
+
+a.linkBlock {
+  padding-left: 10px;
+  color: cadetblue;
+}
+
 
