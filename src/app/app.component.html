@@ -1,0 +1,47 @@
+<div>
+  <div class="header">
+    <mat-toolbar>
+      <mat-toolbar-row style="margin: auto; width: 100px;">
+        <span class="headerText"> Kateryna Levytska </span>
+      </mat-toolbar-row>
+    </mat-toolbar>
+  </div>
+
+  <mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side" opened="true">
+      <div class="avatarWrapper">
+        <img src="assets/my_image.png" class="avatar" routerLink="home">
+      </div>
+      <div class="avatarHaader">Lead software engineer</div>
+
+      <div class="contactDiv">Skype: <a class="linkBlock" href="skype:katerinalev1992">katerinalev1992</a></div>
+      <div class="contactDiv">Cell:  <a class="linkBlock" href="tel:+380958966297">+38(095)89-66-297</a> </div>
+      <div class="contactDiv">E-mail:<a class="linkBlock" href="mailto:katerinalev1992@gmail.com">katerinalev1992@gmail.com</a> </div>
+
+      <div class="side-nav-chapter" routerLink="/contacts">Contacts</div>
+      <div class="side-nav-chapter" routerLink="/experience">Experience</div>
+      <div class="side-nav-chapter" routerLink="/education">Education</div>
+    </mat-drawer>
+
+    <div class="example-sidenav-content">
+      <router-outlet></router-outlet>
+    </div>
+
+  </mat-drawer-container>
+
+  <div class="footer">
+    <mat-toolbar>
+      <mat-toolbar-row>
+        <div class="footer-icon-block">
+          <a target="_blank" href="https://www.linkedin.com/in/kateryna-levytska-le/"><img src="assets/social/linkedin.png" class="fImg"> </a>
+          <a target="_blank" href="https://www.facebook.com/kateryna.levytska.1"><img src="assets/social/facebook.png" class="fImg"></a>
+          <a target="_blank" href="https://www.instagram.com/katerynalevytska/"><img src="assets/social/instagram.png" class="fImg"></a>
+          <a target="_blank" href="https://twitter.com/levitskaks"><img src="assets/social/twitter.png" class="fImg"></a>
+          <a target="_blank" href="https://www.youtube.com/channel/UCZrgqCxzfoYEzVZA9M-uvzg/featured?view_as=subscriber"><img src="assets/social/youtube.png" class="fImg"></a>
+          <a target="_blank" href="https://github.com/katerinalev1992?tab=repositories"><img src="assets/social/github.png" class="fImg"></a>
+        </div>
+      </mat-toolbar-row>
+    </mat-toolbar>
+  </div>
+</div>
+

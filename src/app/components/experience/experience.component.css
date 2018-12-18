@@ -1,0 +1,12 @@
+.example-card {
+  max-width: 90%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.example-header-image {
+  /*background-image: url('assets/my_image.jpg');*/
+  background-size: cover;
+}
